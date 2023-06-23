@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #131112, #0094cf);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#calendar {
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    transition: 0.2s;
+    border-top-right-radius: 22px;
+    box-shadow: 8px 5px 8px rgb(0, 0, 0);;
+    cursor: pointer;
+}
+#calendar:hover{
+    scale: 1.2;
+}
+
+#left, #right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+}
+#right {
+    width: 48%;
+    background: linear-gradient(360deg, #2c252c, #0083da, #00c3ff);
+    color: #fff;
+    border-top-right-radius: 22px;
+    border-bottom-left-radius: 30px;
+}
+#left {
+    width: 52%;
+}
+
+#date {
+    font-size: 100px;
+    line-height: 90px;
+    text-shadow: 3px 3px 3px rgb(26, 26, 26);
+}
+#year {
+    text-shadow: 3px 3px 3px rgb(26, 26, 26);
+    font-size: 30px;
+}
