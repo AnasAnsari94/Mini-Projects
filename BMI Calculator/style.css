@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background: rgb(2,0,36);
+    /* background-image: url(./set-sports-equipment-with-smartphone_23-2148241670.jpg); */
+    background-size: cover;
+    background-position: center;
+    /* background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+    background: rgb(2,0,36);
+background: linear-gradient(135deg, rgba(2,0,36,1) 0%, #2dc86e 75%, #00933d 100%);
+}
+
+
+#box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-bottom: 475px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 350px;
+    height: 550px;
+    background-color: rgba(66, 131, 61, 0.151);
+    border-radius: 20px;
+    transition: .2s;
+    /* box-shadow:  3px 5px 8px rgb(26, 26, 26);; */
+    -webkit-box-shadow: -18px -12px 13px -11px rgba(0,0,0,0.69); 
+box-shadow: -18px -12px 13px -11px rgba(0,0,0,0.55);
+}
+#box h1 {
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 3px 5px 8px rgb(26, 26, 26);
+    color: aliceblue;
+}
+#box img{
+    margin-top: 20px;
+}
+#text{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #ffffff;
+}
+#box input{
+     border: none;
+     outline: none;
+     border-bottom: 4px solid #ffffff;
+     border-radius: 12px;
+     background: none;
+     padding: 10px;
+     padding-left: 24px;
+     font-weight: 500;
+     width: 75%;
+     transition: .2s;
+    color: #ffffff;
+}
+::placeholder { 
+    color: #fff;
+    opacity: 0.8; 
+  }
+  
+#btn {
+    margin: 15px 0;
+    font-size: 18px;
+    padding: 5px 10px ;
+    width: 250px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+    /* background-color: deepskyblue; */
+    background-color: #00c90a;
+    transition: 0.5s ease-in-out;
+}
+#btn:hover {
+    -webkit-box-shadow: 0px 10px 13px -12px #000000, 5px 19px 31px -2px rgba(0,0,0,0.21); 
+        box-shadow: 0px 10px 13px -12px #000000, 5px 19px 31px -2px rgba(0,0,0,0.21);
+}
+#info {
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0 12px;
+}
+#result {
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+hr {
+    width: 35%;
+    height: 3px;
+    margin-left: 115px;
+    background-color: #ffffff;
+}
+
+.result {
+    width: 300px ;
+    overflow: hidden;
+    height: 35px;
+    background-color: #ffffff5d;
+    display: flex;
+    position: relative;
+    top: 10%;
+    left: 8%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.result #result {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+/* This style is copied  */
+.gender {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    /* background: #fff; */
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+
+.gender .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    /* margin-bottom: 12px; */
+    margin-top: 7px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  
+  .gender .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  
+  .gender .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  .gender .container input:checked ~ .checkmark {
+    background-color: #1dd61d;
+  }
+  
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+
+  .gender .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  
+  .gender .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+
+
+  

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Linking Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Manrope:wght@500&family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div id="container">
+        <div id="box">
+            <img src="icons8-bmi-64.png" alt="">
+        <h1>BMI Calculator</h1>
+        <div class="gender">
+
+            <label class="container">
+                <input type="radio" name="radio" id="m"><p class="text">Male👨🏻</p>
+                <span class="checkmark"></span>
+              </label>
+
+
+            <label class="container">
+                <input type="radio" name="radio" id="f" ><p class="text">Female👧🏻</p>
+                  <span class="checkmark"></span>
+                </label>
+
+        </div>
+
+        <p id="text">Height <hr></p>
+        <input type="text" id="height" placeholder="Enter your height in Cm">
+        <p id="text">Weight <hr></p>
+        <input type="text" id="weight" placeholder="Enter your weight in Kg">
+        <div class="result">
+        <p id="result"></p>
+        </div>
+        <button id="btn" onclick="bmi()">Calculate</button>
+        <p id="info">Please enter height in [cm] and weight [kg]</p>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
